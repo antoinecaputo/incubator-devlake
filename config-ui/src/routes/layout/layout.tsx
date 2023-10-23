@@ -141,25 +141,6 @@ export const Layout = () => {
                     <img src={APIIcon} alt="api" />
                     <span>API</span>
                   </ExternalLink>
-                  <Navbar.Divider />
-                  <a
-                    href="https://github.com/apache/incubator-devlake"
-                    rel="noreferrer"
-                    target="_blank"
-                    className="navIconLink"
-                  >
-                    <img src={GitHubIcon} alt="github" />
-                    <span>GitHub</span>
-                  </a>
-                  <Navbar.Divider />
-                  <a
-                    href="https://join.slack.com/t/devlake-io/shared_invite/zt-26ulybksw-IDrJYuqY1FrdjlMMJhs53Q"
-                    rel="noreferrer"
-                    target="_blank"
-                  >
-                    <img src={SlackIcon} alt="slack" />
-                    <span>Slack</span>
-                  </a>
                 </Navbar.Group>
               </S.Header>
               <S.Inner>

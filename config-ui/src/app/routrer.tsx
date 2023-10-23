@@ -31,6 +31,7 @@ import { Layout, loader as layoutLoader } from '@/routes/layout';
 import { Error, ErrorEnum } from '@/routes/error';
 import { Pipelines, Pipeline } from '@/routes/pipeline';
 import { ApiKeys } from '@/routes/api-keys';
+import { ExtraLayout } from '@next';
 
 export const router = createBrowserRouter([
   {
@@ -43,7 +44,11 @@ export const router = createBrowserRouter([
   },
   {
     path: '/',
-    element: <Layout />,
+    element: (
+      <ExtraLayout>
+        <Layout></Layout>
+      </ExtraLayout>
+    ),
     loader: layoutLoader,
     errorElement: <Error />,
     children: [

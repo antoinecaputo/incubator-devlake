@@ -43,6 +43,10 @@ instance.interceptors.response.use(
       window.location.replace('/db-migrate');
     }
 
+    if (status === 401) {
+      window.location.reload();
+    }
+
     return Promise.reject(error);
   },
 );

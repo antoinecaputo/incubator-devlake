@@ -26,6 +26,8 @@ export default defineConfig({
 
   envPrefix: 'DEVLAKE_',
 
+  publicDir: path.join(__dirname, '../../frontend/public'),
+
   server: {
     port: 4000,
     proxy: {
@@ -40,6 +42,7 @@ export default defineConfig({
   resolve: {
     alias: {
       '@': path.join(__dirname, './src'),
+      '@next': path.join(__dirname, '../../frontend/src'),
     },
   },
 });

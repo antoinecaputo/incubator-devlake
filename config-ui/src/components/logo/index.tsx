@@ -23,6 +23,10 @@ import LogoImg from '@/images/logo.svg';
 const Wrapper = styled.div`
   display: flex;
   justify-content: center;
+
+  img {
+    max-width: 150px;
+  }
 `;
 
 export const Logo = () => {

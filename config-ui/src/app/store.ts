@@ -17,11 +17,13 @@
  */
 
 import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit';
-import connectionsSlice from '@/features/connections/slice';
+import connectionSlice from '@/features/connections/slice';
+import userSlice from '@next/user/slice';
 
 export const store = configureStore({
   reducer: {
-    connections: connectionsSlice,
+    connections: connectionSlice,
+    user: userSlice,
   },
 });
 
